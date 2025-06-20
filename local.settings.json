@@ -1,0 +1,12 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+        "FUNCTIONS_WORKER_RUNTIME": "python",
+        "COSMOS_DB_URL": "the URL for the Cosmos endpoint",
+        "COSMOS_KEY": "the Cosmos key",
+        "BLOB_CONNECTION_STRONG": "the blob connection string",
+        "DATABASE_NAME": "billing",
+        "CONTAINER_NAME": "records"
+    }
+}

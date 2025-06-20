@@ -2,14 +2,15 @@ import datetime
 import gzip
 import json
 import logging
+import os
 import azure.functions as func
 from azure.storage.blob import BlobServiceClient
 from azure.cosmos import CosmosClient, PartitionKey
 
-COSMOS_DB_URL = "the URL for the Cosmos endpoint"
-COSMOS_KEY = "the Cosmos key"
-DATABASE_NAME = "billing"
-CONTAINER_NAME = "records"
+COSMOS_DB_URL = os.environ["COSMOS_DB_URL"]
+COSMOS_KEY = os.environ["COSMOS_KEY"]
+DATABASE_NAME = os.environ["DATABASE_NAME"]
+CONTAINER_NAME = os.environ["CONTAINER_NAME"]
 
 BLOB_CONNECTION_STRING = "the blob connection string"
 BLOB_CONTAINER = "billing-archive"
