@@ -12,8 +12,8 @@ COSMOS_KEY = os.environ["COSMOS_KEY"]
 DATABASE_NAME = os.environ["DATABASE_NAME"]
 CONTAINER_NAME = os.environ["CONTAINER_NAME"]
 
-BLOB_CONNECTION_STRING = "the blob connection string"
-BLOB_CONTAINER = "billing-archive"
+BLOB_CONNECTION_STRING = os.environ["BLOB_CONNECTION_STRING"]
+BLOB_CONTAINER = os.environ["CONTAINER_NAME"]
 
 def main(mytimer: func.TimerRequest) -> None:
     logging.info("Starting archival job...")
