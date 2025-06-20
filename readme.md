@@ -21,7 +21,7 @@ a tiered storage system using:
 
 # Architecture Diagram
 
-<details> <summary>Mermaid Markdown (click to expand)</summary> <pre><code>```mermaid flowchart TD A[Client App/API] --> B[Azure Function App] B --> C{Data < 3 months?} C -- Yes --> D[Cosmos DB] C -- No --> E[Azure Blob Storage] F[Timer Trigger] --> G[Archival Function] G --> H[Query old records from Cosmos] H --> I[Write to Blob Storage] I --> J[Delete from Cosmos DB] ```</code></pre> </details>
+![Architecture Diagram](./Architecture.svg)
 
 # Workflow Logic
 
